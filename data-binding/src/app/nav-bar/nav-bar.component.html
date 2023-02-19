@@ -1,0 +1,22 @@
+<nav>
+    <div class="links">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </div>
+    <div class="search">
+        <input type="text" placeholder="Search" [(ngModel)]="userName">
+
+    </div>
+    
+    <div class="online-status">
+        <img [src]="profileImage" alt="profile image">
+        <span class="status"></span>
+        <span *ngIf="online ; else offline" class="online">Online</span>
+
+        <ng-template #offline>
+            <span class="offline">Offline</span>
+        </ng-template>
+        <p>{{userName}}</p>
+    </div>
+</nav>

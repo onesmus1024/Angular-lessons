@@ -1,0 +1,18 @@
+
+
+
+.warning-alert {
+    background-color: mistyrose;
+    padding: 10px;
+    border: 1px solid red;
+    border-radius: 5px;
+    display: flex;
+}
+
+.warning-alert span {
+    margin-left: 10px;
+}
+
+.warning-alert span:hover{
+    cursor: pointer;
+}

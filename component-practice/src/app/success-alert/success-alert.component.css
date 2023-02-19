@@ -1,0 +1,18 @@
+
+
+
+.success-alert {
+    background-color: palegreen;
+    padding: 10px;
+    border: 1px solid green;
+    border-radius: 5px;
+    display: flex;
+}
+
+.success-alert span {
+    margin-left: 10px;
+}
+
+.success-alert span:hover{
+    cursor: pointer;
+}

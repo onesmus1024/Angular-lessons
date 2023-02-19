@@ -1,0 +1,24 @@
+<div>
+    {{title}}
+</div>
+
+<div class="products">
+    <h1>Products</h1>
+    <div class="product-content">
+        <div *ngFor="let product of products">
+            <div class="product-card">
+                <h3>{{product.name}}</h3>
+                <p>{{product.quantity}}</p>
+                <p>{{product.price}}</p>
+                <p *ngIf="product.name else elseBlock">
+                    <button (click)="share()" [title]="product.name">Share</button>
+                </p>
+                <ng-template #elseBlock>
+                    <p>Product name is not available</p>
+                </ng-template>
+                <app-product-alert [product]="product"></app-product-alert>
+                <img [src]="product.image" alt="product image" />
+            </div>
+        </div>
+    </div>
+</div>
