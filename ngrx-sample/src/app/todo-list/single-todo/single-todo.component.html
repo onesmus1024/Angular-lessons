@@ -1,0 +1,11 @@
+
+
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">{{todo.title}}</h5>
+        <p class="card-text">{{todo.description}}</p>
+        <p class="card-text">Completed: <input type="checkbox" [checked]="todo.completed" (change)="toggleTodo()"></p>
+        <button class="btn btn-primary" (click)="toggleTodo()">Toggle</button>
+        <button class="btn btn-danger" (click)="deleteTodo()">Delete</button>
+    </div>
+</div>
